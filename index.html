@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ntokozo Kubheka's Semitone Web App</title>
+  <link rel="stylesheet" href="css/stye.css">
+</head>
+
+<body>
+  <div class="slider-thumb"></div>
+  <div class="center-wrapper">
+    <div class="container">
+      <div class="semitone">
+        <div class="display-explanations" id="explanations">
+          Please enter a value between 0-12 to guess the semitone distance
+          between the two notes.
+        </div>
+        <div class="show-notes">
+          <div class="first-group">
+            <p class="eleven">G#/Ab</p>
+            <p class="zero">A</p>
+            <p class="one">A#/Bb</p>
+          </div>
+
+          <div class="second-group">
+            <p class="ten">G</p>
+            <p class="two">B</p>
+          </div>
+
+          <div class="third-group">
+            <p class="nine">F#/Gb</p>
+            <p class="three">C</p>
+          </div>
+
+          <div class="fourth-group">
+            <p class="eight">F</p>
+            <p class="four">C#/Db</p>
+          </div>
+
+          <div class="fifth-group">
+            <p class="seven">E</p>
+            <p class="six">D#/Eb</p>
+            <p class="five">D</p>
+          </div>
+        </div>
+        <div class="semitone-container" id="semitone-notes"></div>
+        <div class="streak-game" id="streak">streak : 0</div>
+      </div>
+
+      <div class="answer-box">
+        <label for="answer">Answer:</label>
+        <input type="number" id="answer" name="answer">
+        <button id="submit">submit</button>
+      </div>
+
+      <div class="game-buttons">
+        <button id="randomize">randomize</button>
+        <button id="stop-game">end</button>
+        <button id="restart">restart</button>
+      </div>
+    </div>
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>
